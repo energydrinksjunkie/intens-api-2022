@@ -6,10 +6,10 @@ ENV PORT=8080
 
 COPY pom.xml .
 
-COPY .mvn/ .
-COPY ./.mvn ./.mvn
+COPY .mvn/ .mvn/
+COPY mvnw .
 
-RUN ./mwnw dependency:go-offline
+RUN ./mvnw dependency:go-offline
 
 COPY src ./src
 
