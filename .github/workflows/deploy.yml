@@ -35,4 +35,4 @@ jobs:
         docker rm intens-praksa || true
 
     - name: Run Latest image
-      run: docker run -d --name intens-praksa -p 8080:8080 "${{ secrets.DOCKER_USERNAME }}/repo:latest"
+      run: docker run -d --name intens-praksa -p 8080:8080 "${{ secrets.DOCKER_USERNAME }}/intens-praksa:latest"
