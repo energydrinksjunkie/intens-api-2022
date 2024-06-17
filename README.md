@@ -8,6 +8,7 @@ Uputstvo za pokretanje.
 
 ## Nakon push-a pokrenuti
 `docker rmi energydrinksjunkie/intens-praksa`
+
 `docker run --rm -p 8080:8080 energydrinksjunkie/intens-praksa`
 
 ### Potrebni Alati
