@@ -7,7 +7,7 @@ Uputstvo za pokretanje.
 [Adresa servisa](http://localhost:8080)
 
 ## Nakon push-a pokrenuti
-`docker rmi energydrinksjunkie/intens-praksa`
+`docker rmi energydrinksjunkie/intens-praksa -f`
 
 `docker run --rm -p 8080:8080 energydrinksjunkie/intens-praksa`
 
