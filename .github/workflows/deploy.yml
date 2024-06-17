@@ -28,11 +28,3 @@ jobs:
       run: |
         docker tag intens-praksa "${{ secrets.DOCKER_USERNAME }}/intens-praksa:latest"
         docker push "${{ secrets.DOCKER_USERNAME }}/intens-praksa:latest"
-
-    - name: Stop and Remove Current image
-      run: |
-        docker stop intens-praksa || true
-        docker rm intens-praksa || true
-
-    - name: Run Latest image
-      run: docker run -d --name intens-praksa -p 8080:8080 "${{ secrets.DOCKER_USERNAME }}/intens-praksa:latest"
